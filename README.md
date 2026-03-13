@@ -16,3 +16,19 @@ Class 07 [Machine Learning](class07/class07.md)
 Class 08 [Breast Cancer Mini Project](class08/class08.md)
 
 Class 09 [Candy Mini Project](class09/class09.md)
+
+Class 10 [Structural Bioinformatics](class10/class10.md)
+
+Class 11 [Protein Structure Prediction with Alphafold](class11/class11.md)
+
+Class 12 [Introduction to Genome Informatics Lab](class12/class12.md)
+
+Class 13 [RNASeq with DESeq2](class13/class13.md)
+
+Class 14 [RNA-Seq Mini-Project](class14/class14.md)
+
+Class 17 [Obtaining and processing SRA datasets on AWS](class17/class17.md)
+
+Class 18 [Pertussis Mini Project](class18/class18.md)
+
+Class 19 [Cancer Mutation Analysis](class19/class19.md)
