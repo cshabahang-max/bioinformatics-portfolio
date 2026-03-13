@@ -3,8 +3,17 @@
 
 @import "{{ site.theme }}";
 
+header {
+  width: 300px;
+}
+
+section {
+  width: 600px;
+}
+
 header img {
-  width: 270px;
+  width: 285px;
+  max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto 18px;
