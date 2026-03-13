@@ -29,6 +29,8 @@ Class 06 [RStudio functions](class06/class06.md)
 
 Class 07 [Machine Learning](class07/class07.md)
 
+*Applied Bioinformatics Projects/Classes*
+
 Class 08 [Breast Cancer Mini Project](class08/class08.md)
 
 Class 09 [Candy Mini Project](class09/class09.md)
