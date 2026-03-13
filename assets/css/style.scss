@@ -5,16 +5,24 @@
 
 header {
   width: 320px;
+  text-align: center;
+}
+
+header h1,
+header h2,
+header p,
+header .view {
+  text-align: center;
+}
+
+header img {
+  width: 260px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto 22px auto;
 }
 
 section {
   width: 580px;
-}
-
-header img {
-  width: 305px;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 18px;
 }
