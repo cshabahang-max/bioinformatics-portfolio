@@ -1,7 +1,23 @@
-# Bioinformatics Projects
-My classwork from [BIMM143](https://bioboot.github.io/bimm143_W26/) at UC San Diego 
+#Bioinformatics Projects
+### Cyrus Shabahang
 
-## Index of Material 
+My classwork from [BIMM143](https://bioboot.github.io/bimm143_W26/) at UC San Diego
+
+Bioinformatics student at UC San Diego interested in genomics, transcriptomics, and computational biology. This portfolio showcases selected coursework and mini-projects focused on biological data analysis, visualization, and applied bioinformatics methods.
+
+## Technical Skills
+
+**Programming / Analysis:** R, data visualization, statistical analysis, bioinformatics workflows  
+**Tools / Topics:** ggplot2, DESeq2, AlphaFold, AWS, RNA-seq, structural bioinformatics, genome informatics
+
+## Featured Areas
+
+- Data visualization and exploratory analysis
+- RNA-seq and differential expression analysis
+- Structural bioinformatics and protein modeling
+- Cloud-based biological data processing
+
+## Index of Material
 
 *Introductory classes*
 
