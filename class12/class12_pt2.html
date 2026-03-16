@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.35">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>Class 12: Genome Informatics Lab Q13&amp;Q14</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -62,15 +65,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="class12_pt2_files/libs/clipboard/clipboard.min.js"></script>
 <script src="class12_pt2_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="class12_pt2_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="class12_pt2_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="class12_pt2_files/libs/quarto-html/popper.min.js"></script>
 <script src="class12_pt2_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="class12_pt2_files/libs/quarto-html/anchor.min.js"></script>
 <link href="class12_pt2_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="class12_pt2_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="class12_pt2_files/libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="class12_pt2_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="class12_pt2_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="class12_pt2_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="class12_pt2_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -79,15 +81,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
 <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-  <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#q13---read-this-file-into-r-and-determine-the-sample-size-for-each-genotype-and-their-corresponding-median-expression-levels-for-each-of-these-genotypes." id="toc-q13---read-this-file-into-r-and-determine-the-sample-size-for-each-genotype-and-their-corresponding-median-expression-levels-for-each-of-these-genotypes." class="nav-link active" data-scroll-target="#q13---read-this-file-into-r-and-determine-the-sample-size-for-each-genotype-and-their-corresponding-median-expression-levels-for-each-of-these-genotypes.">Q13 - Read this file into R and determine the sample size for each genotype and their corresponding median expression levels for each of these genotypes.</a></li>
-  <li><a href="#q14---generate-a-boxplot-with-a-box-per-genotype-what-could-you-infer-from-the-relative-expression-value-between-aa-and-gg-displayed-in-this-plot-does-the-snp-effect-the-expression-of-ormdl3" id="toc-q14---generate-a-boxplot-with-a-box-per-genotype-what-could-you-infer-from-the-relative-expression-value-between-aa-and-gg-displayed-in-this-plot-does-the-snp-effect-the-expression-of-ormdl3" class="nav-link" data-scroll-target="#q14---generate-a-boxplot-with-a-box-per-genotype-what-could-you-infer-from-the-relative-expression-value-between-aa-and-gg-displayed-in-this-plot-does-the-snp-effect-the-expression-of-ormdl3">Q14 - Generate a boxplot with a box per genotype, what could you infer from the relative expression value between A/A and G/G displayed in this plot? Does the SNP effect the expression of ORMDL3?</a></li>
-  </ul>
-</nav>
-</div>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="../class12_pt2.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -115,8 +109,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="q13---read-this-file-into-r-and-determine-the-sample-size-for-each-genotype-and-their-corresponding-median-expression-levels-for-each-of-these-genotypes." class="level2">
-<h2 class="anchored" data-anchor-id="q13---read-this-file-into-r-and-determine-the-sample-size-for-each-genotype-and-their-corresponding-median-expression-levels-for-each-of-these-genotypes.">Q13 - Read this file into R and determine the sample size for each genotype and their corresponding median expression levels for each of these genotypes.</h2>
+<blockquote class="blockquote">
+<p>Q13 - Read this file into R and determine the sample size for each genotype and their corresponding median expression levels for each of these genotypes.</p>
+</blockquote>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>url_w19 <span class="ot">&lt;-</span> <span class="st">"https://bioboot.github.io/bggn213_W19/class-material/rs8067378_ENSG00000172057.6.txt"</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> <span class="fu">read.table</span>(url_w19, <span class="at">header=</span><span class="cn">TRUE</span>, <span class="at">stringsAsFactors=</span><span class="cn">FALSE</span>)</span>
@@ -171,9 +166,9 @@ A/A A/G G/G
 </div>
 </div>
 <p>The sample sizes are: A/A: 108, A/G: 233, and G/G: 121. The median expression values are 31.24847 (A/A), 25.06486 (A/G), and 20.07363 (G/G).</p>
-</section>
-<section id="q14---generate-a-boxplot-with-a-box-per-genotype-what-could-you-infer-from-the-relative-expression-value-between-aa-and-gg-displayed-in-this-plot-does-the-snp-effect-the-expression-of-ormdl3" class="level2">
-<h2 class="anchored" data-anchor-id="q14---generate-a-boxplot-with-a-box-per-genotype-what-could-you-infer-from-the-relative-expression-value-between-aa-and-gg-displayed-in-this-plot-does-the-snp-effect-the-expression-of-ormdl3">Q14 - Generate a boxplot with a box per genotype, what could you infer from the relative expression value between A/A and G/G displayed in this plot? Does the SNP effect the expression of ORMDL3?</h2>
+<blockquote class="blockquote">
+<p>Q14 - Generate a boxplot with a box per genotype, what could you infer from the relative expression value between A/A and G/G displayed in this plot? Does the SNP effect the expression of ORMDL3?</p>
+</blockquote>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(exp <span class="sc">~</span> geno, <span class="at">data=</span>dat,</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">"rs8067378 genotype"</span>, </span>
@@ -188,7 +183,6 @@ A/A A/G G/G
 </div>
 </div>
 <p>When the A/A box has a higher median than G/G, the A allele has a corresponding higher ORMDL3 expression. A/A has the highest expression, A/G is intermediate, and G/G has the lowest expression. If the G/G box has a higher median than A/A, then the G allele has a higher ORMDL3 expression. The SNP does affect the expression of ORMDL3.</p>
-</section>
 
 </main>
 <!-- /main column -->

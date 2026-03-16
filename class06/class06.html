@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.35">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>Class06: R Functions</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -62,23 +65,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="class06_files/libs/clipboard/clipboard.min.js"></script>
 <script src="class06_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="class06_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="class06_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="class06_files/libs/quarto-html/popper.min.js"></script>
 <script src="class06_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="class06_files/libs/quarto-html/anchor.min.js"></script>
 <link href="class06_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="class06_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="class06_files/libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="class06_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="class06_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="class06_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="class06_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="quarto-light">
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  <li><a href="#a-first-function" id="toc-a-first-function" class="nav-link" data-scroll-target="#a-first-function">A first function</a></li>
+  <li><a href="#a-second-function" id="toc-a-second-function" class="nav-link" data-scroll-target="#a-second-function">A second function</a></li>
+  <li><a href="#a-new-cool-function" id="toc-a-new-cool-function" class="nav-link" data-scroll-target="#a-new-cool-function">A new cool function</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="../class06.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -182,7 +195,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, <span class="at">size=</span><span class="dv">12</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1]  7  3  4 10  3  9  1  4  9 10  8  7</code></pre>
+<pre><code> [1]  6  1 10  8  6  4 10  3  8  6 10  8</code></pre>
 </div>
 </div>
 <blockquote class="blockquote">
@@ -191,7 +204,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sample</span>(<span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"C"</span>, <span class="st">"G"</span>, <span class="st">"T"</span>), <span class="at">size=</span><span class="dv">12</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "A" "A" "T" "T" "T" "A" "A" "G" "T" "G" "A" "C"</code></pre>
+<pre><code> [1] "A" "C" "A" "C" "C" "C" "T" "A" "T" "C" "T" "A"</code></pre>
 </div>
 </div>
 <blockquote class="blockquote">
@@ -206,7 +219,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">generate_dna</span>(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "C" "C" "C" "A" "G" "T" "C" "C" "A" "G"</code></pre>
+<pre><code> [1] "A" "G" "A" "A" "G" "A" "A" "C" "T" "A"</code></pre>
 </div>
 </div>
 <blockquote class="blockquote">
@@ -223,7 +236,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">generate_dna</span>(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "CAACGTACCA"</code></pre>
+<pre><code>[1] "AAGGAATAAG"</code></pre>
 </div>
 </div>
 <blockquote class="blockquote">
@@ -250,14 +263,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>Hello there...</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "CGCAGGTGGG"</code></pre>
+<pre><code>[1] "TAGTCACTAT"</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">generate_dna</span>(<span class="dv">10</span>, <span class="at">fasta=</span> F)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>General Kenobi</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] "T" "T" "G" "T" "G" "G" "G" "T" "C" "T"</code></pre>
+<pre><code> [1] "T" "G" "T" "T" "T" "T" "G" "C" "G" "T"</code></pre>
 </div>
 </div>
 </section>
@@ -278,7 +291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="fu">generate_protein</span>(<span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "CDWWDVWYWVEASFWEDMCI"</code></pre>
+<pre><code>[1] "KDTGMTHHTQKIQNTMEAYQ"</code></pre>
 </div>
 </div>
 <blockquote class="blockquote">
@@ -292,16 +305,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>  ans <span class="ot">&lt;-</span> <span class="fu">paste</span>(ans, <span class="at">collapse =</span> <span class="st">""</span>)</span>
 <span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(ans)</span>
 <span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>results <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
-<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">6</span><span class="sc">:</span><span class="dv">12</span>) {</span>
-<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>  results[[i]] <span class="ot">&lt;-</span> <span class="fu">generate_protein</span>(i)</span>
-<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>results[[<span class="dv">6</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">6</span><span class="sc">:</span><span class="dv">12</span>) {</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="st">"&gt;"</span>, i, <span class="at">sep=</span><span class="st">""</span>, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="fu">generate_protein</span>(i), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] "NTKLPR"</code></pre>
+<pre><code>&gt;6
+ASCCIF 
+&gt;7
+HQKYEQW 
+&gt;8
+WFMITPGI 
+&gt;9
+ILHSGVPDF 
+&gt;10
+VEMSHHRPMR 
+&gt;11
+EQKLQYVTCGW 
+&gt;12
+HMADVTTVANKF </code></pre>
 </div>
 </div>
 </section>
